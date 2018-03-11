@@ -11,7 +11,11 @@ object NWinsServer {
     log("starting server")
 
     val http = ignite()
+    http.port(8080)
 
+    http.get("/**") { 
+      log("FOOO")
+    }
     http.get("/hello") {
       "Hello Spark Kotlin!"
     }
