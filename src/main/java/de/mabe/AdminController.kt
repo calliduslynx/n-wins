@@ -1,16 +1,17 @@
 package de.mabe
 
-object AdminController {
-  fun handleRequest(req: Request, res: Response) {
-    return
-  }
+import de.mabe.util.JsonNode
 
-  fun getIndexHtml(): String {
-    TODO()
-  }
+object AdminController {
+  private val indexHtml = AdminController.javaClass.getResourceAsStream("/index.html").bufferedReader().readText()
+
+  fun getIndexHtml(): String = indexHtml
 
   fun getUxData(): String {
     TODO()
+  }
+
+  fun handleCommand(payload: JsonNode) {
   }
 
 }

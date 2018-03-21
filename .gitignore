@@ -4,3 +4,4 @@ out
 .ieda
 .idea
 build
+.DS_Store

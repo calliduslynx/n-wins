@@ -15,6 +15,9 @@ object RequestCounter {
     return 1 // TODO
   }
 
+  /**
+   * @throws ServerException
+   */
   fun registerRequestFromUser(user: User) {
     // TODO
   }
